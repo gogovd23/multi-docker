@@ -3,8 +3,8 @@ service:
   - docker
 
 before_install:
-  - docker build -t georgigeorgiev9323/react-test -f ./client/Dockefile.dev ./client
-
+  - docker build -t georgigeorgiev9323/react-test -f ./client/Dockerfile.dev ./client
+#TESSSSSTTTT
 script:
   - docker run georgigeorgiev9323/react-test npm test -- --coverage
 
